@@ -19,7 +19,7 @@
       
       <div id="card-pesan" class="card">
           <div class="d-flex flex-row justify-content-between p-3 adiv text-white">
-              <i class="fas fa-chevron-left"></i>
+              <i id="to-pesan" target-id="#pesan-text" class="fas fa-chevron-down"></i>
               <span class="pb-3">Public Chat</span>
               <i class="fas fa-times"></i>
           </div>
@@ -31,7 +31,7 @@
           </div>
           <div id="pesan"></div>
           <div class="form-group px-3 align-content-end">
-              <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan kamu..."></textarea>
+              <textarea class="form-control" id="pesan-text" rows="5" placeholder="Tulis pesan kamu..." required></textarea>
               <button class="btn btn-sm btn-outline-success mt-2 w-100" id="sent">Kirim</button>
           </div>
       </div>

@@ -1,9 +1,9 @@
 $(document).ready(function() {
-          eruda.init()
+          // eruda.init()
           var socket = io()
 
           let nama_ = localStorage.getItem('nama_')
-          let pesan = $('textarea#pesan')
+          let pesan = $('textarea#pesan-text')
 
           let pesan_box = $('#card-pesan')
           let starter = $('#starter')
@@ -13,10 +13,18 @@ $(document).ready(function() {
 
           pesan_box.hide()
 
+          // $('#pesan').scrollTop($('#pesan')[0].scrollHeight)
           if (nama_) {
               show_pesan_box()
               showMessages()
           }
+
+          $('#to-pesan').on('click', function() {
+              let id = $(this).attr('target-id')
+              $('html body').animate({
+                  scrollTop: ($(id).offset().top)
+              })
+          })
 
           gabung.on('click', () => {
               name_added(nama.val())

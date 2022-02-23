@@ -55,3 +55,8 @@ body {
     font-size: 8px;
     color: #C4C4C4;
 }
+
+#pesan {
+    overflow-y: auto;
+    max-height: 350px;
+}
