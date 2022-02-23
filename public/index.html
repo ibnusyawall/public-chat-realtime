@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Public Realtime Chat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="container d-flex mb-2 mt-5 justify-content-center">
+      <div class="jumbotron" id="starter">
+          <h1 class="display-4">Public Realtime Chat</h1>
+          <input id="nama" class="form-control" placeholder="tulis nama kamu disini...">
+          <button id="gabung" class="btn btn-outline-success mt-2">Gabung!</button>
+      </div>
+      
+      <div id="card-pesan" class="card">
+          <div class="d-flex flex-row justify-content-between p-3 adiv text-white">
+              <i class="fas fa-chevron-left"></i>
+              <span class="pb-3">Public Chat</span>
+              <i class="fas fa-times"></i>
+          </div>
+          <div class="d-flex flex-row p-3">
+              <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-7.png" width="30" height="30">
+              <div class="chat ml-2 p-3">
+                  <b>Syawal: </b><br/><br/>Halo! selamat datang dan selamat bersenang-senang dengan teman public kalian! 🎉
+              </div>
+          </div>
+          <div id="pesan"></div>
+          <div class="form-group px-3 align-content-end">
+              <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan kamu..."></textarea>
+              <button class="btn btn-sm btn-outline-success mt-2 w-100" id="sent">Kirim</button>
+          </div>
+      </div>
+
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script src="/javascripts/script.js"></script>     
+</body>
+
+</html>
